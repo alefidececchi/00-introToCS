@@ -2,12 +2,13 @@
 function BinarioADecimal(num) {
   // tu codigo aca
 
-  var arrNumber = num.split().reverse();
+  var arrNumber = num.split('').reverse();
   var total = 0;
 
   arrNumber.forEach((e, ind) => {
     total += (e * Math.pow(2, ind));
   })
+  
   return total;
 }
 
